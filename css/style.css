@@ -1,0 +1,126 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    background-image: linear-gradient(rgb(255,255,255),rgb(115, 215, 237));
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    background-color: #87CEEB; /* Light Blue */
+    margin: auto;
+    height: 60vh;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    background-color: #FFD700; /* Gold */
+    width: 80%;
+    padding: 10px;
+    margin: 17px 0;
+    border: 2px solid #4CAF50; /* Green */
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease; /* Fade-in animation */
+}
+
+.message.left {
+    float: left;
+    clear: both;
+}
+
+.message.right {
+    float: right;
+    clear: both;
+}
+
+.message:hover {
+    background-color: #FFA500; /* Orange */
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#messageInp {
+    width: 80%;
+    border: 2px solid #4CAF50; /* Green */
+    border-radius: 6px;
+    height: 34px;
+    padding: 8px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid #4CAF50; /* Green */
+    border-radius: 6px;
+    height: 40px; /* Increased size */
+    width: 80px; /* Adjusted width for alignment */
+    background-color: #4CAF50; /* Green */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker Green on hover */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker Green on hover */
+}
+
+#send-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 60px; /* Increased size by 20% */
+    height: 60px; /* Increased size by 20% */
+    transition: transform 0.3s ease; /* Add transform transition effect */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Add scale effect on hover */
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+    transition: color 0.3s; /* Add color transition effect */
+}
+
+nav:hover h1 {
+    color: #FFD700; /* Change color on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
